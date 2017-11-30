@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pb"
+    android:theme="@android:style/Theme.NoTitleBar"
+    tools:context="com.example.codetribe.exclusivesalon.MainActivity">
+
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editpassword"
+        android:layout_alignEnd="@+id/editpassword"
+        android:layout_marginBottom="13dp" />
+
+
+    <TextView
+        android:id="@+id/txtreport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="EXCLUSIVE HAIR SALON"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtreport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editemail"
+        android:layout_alignStart="@+id/editemail"
+        android:layout_below="@+id/editemail"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+
+
+</RelativeLayout>
